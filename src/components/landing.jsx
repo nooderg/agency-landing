@@ -65,8 +65,9 @@ const StyledCTA = styled.div`
 
 
     &:hover .red.glow {
-        transition: all 0.25s ease-in-out;
+        transition: all 0.25s;
         animation: 5s linear 1s infinite rotatered;
+        animation-timing-function: ease-in-out;
     }
 
     @keyframes rotatered {
@@ -89,8 +90,9 @@ const StyledCTA = styled.div`
     }
 
     &:hover .blue.glow {
-        transition: all 0.25s ease-in-out;
+        transition: all 0.25s;
         animation: 5s linear 1s infinite rotateblue;
+        animation-timing-function: ease-in-out;
     }
 
     @keyframes rotateblue {
@@ -176,10 +178,10 @@ function Landing() {
         </div>
         <h3>is Now</h3>
         <StyledCTA>
-            <a href="mailto:cyrille@consultee.fr" className="red glow"></a>
-            <a href="mailto:cyrille@consultee.fr" className="red solid"></a>
-            <a href="mailto:cyrille@consultee.fr" className="blue glow"></a>
-            <a href="mailto:cyrille@consultee.fr" className="blue solid"></a>
+            <div className="red glow"></div>
+            <div className="red solid"></div>
+            <div className="blue glow"></div>
+            <div className="blue solid"></div>
             <a href="mailto:cyrille@consultee.fr" className="white">Contact us</a>
         </StyledCTA>
       </StyledLanding>
